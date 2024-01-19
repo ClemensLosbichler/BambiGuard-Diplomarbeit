@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.helpertutorial.HelperTutorial2Fragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:contentDescription="@string/bambi"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bambi" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="16sp">
+
+        <TextView
+            style="@style/headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:text="@string/follow_the_arrow_like_a_compass"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="19sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Der Pfeil zeigt an, in welcher Richtung sich das Rehkitz befindet. Nachdem Sie das Rehkitz aus dem Feld getragen haben, markieren Sie es als gerettet. " />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageViewSwipe"
+        android:layout_width="70sp"
+        android:layout_height="70sp"
+        android:layout_gravity="right"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/finger_swipe" />
+
+</LinearLayout>

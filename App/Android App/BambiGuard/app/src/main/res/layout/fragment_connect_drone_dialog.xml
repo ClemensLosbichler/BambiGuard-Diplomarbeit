@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        style="@style/headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/connect_drone_to_continue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageViewDrone"
+        android:layout_width="110dp"
+        android:layout_height="73dp"
+        android:src="@drawable/dji_mavic_2_enterprise_dual"
+        app:layout_constraintStart_toStartOf="@+id/textViewTitle"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+    <TextView
+        android:id="@+id/textViewDroneName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewDrone"
+        app:layout_constraintStart_toEndOf="@id/imageViewDrone"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        android:text="@string/dji_mavic_2_enterprise_dual"/>
+
+    <TextView
+        android:id="@+id/textViewDroneConnected"
+        style="@style/danger"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/disconnected"
+        app:layout_constraintStart_toStartOf="@+id/textViewDroneName"
+        app:layout_constraintTop_toBottomOf="@id/textViewDroneName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
